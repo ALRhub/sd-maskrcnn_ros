@@ -20,20 +20,20 @@ if os.path.exists('README.md'):
         long_description = f.read()
 
 setup_requirements = [
-    'Cython',                
+    'Cython',
     'numpy'
 ]
 
 requirements = [
     'pycocotools>=2.0',         # For benchmarking
     'scikit-image>=0.14.2',     # For image loading
-    'keras>=2.2<2.3',           # For training
+    'keras>=2.2',               # For training
     'tqdm',                     # For pretty progress bars
     'matplotlib',               # For visualization of results
     'h5py<3.0.0',               # Loading pretrained models
     'autolab_core>=1.1.0',      # For core utilities
-    'nvidia-tensorflow',        # For training - need TF 1.15 so use nvidia
-    f'mask-rcnn @ file://localhost{root_dir}/maskrcnn' 
+#    'nvidia-tensorflow',        # For training - need TF 1.15 so use nvidia
+    f'mask-rcnn @ file://localhost{root_dir}/maskrcnn'
                                 # Underlying Mask RCNN model
 ]
 

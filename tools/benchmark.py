@@ -34,11 +34,13 @@ import argparse
 import os
 from copy import copy
 
+
 import matplotlib.pyplot as plt
 import numpy as np
 import tensorflow as tf
+from tensorflow import keras
 from autolab_core import YamlConfig
-from keras.backend.tensorflow_backend import set_session
+from tensorflow.keras.backend import set_session
 from mrcnn import model as modellib
 from mrcnn import visualize
 from tqdm import tqdm

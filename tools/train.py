@@ -26,7 +26,7 @@ import os
 
 import tensorflow as tf
 from autolab_core import YamlConfig
-from keras.backend.tensorflow_backend import set_session
+from tensorflow.keras.backend import set_session
 
 from sd_maskrcnn.dataset import ImageDataset
 from sd_maskrcnn.model import SDMaskRCNNModel
